@@ -1,0 +1,14 @@
+/* Normal import, but depending of the file structure the path can be very big */
+/* @st-import Button from '../../theme/atoms/Button/button.st.css'; */
+
+/* Import using alias could be very good (Works on webpack, but the intelligence throws a error)*/
+@st-import Button from '@theme/atoms/Button/button.st.css';
+
+.root {
+  padding: 20px;
+  background-color: #bbb;
+}
+
+.root Button {
+  background-color: yellow;
+}
